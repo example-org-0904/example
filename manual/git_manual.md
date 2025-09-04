@@ -1,10 +1,8 @@
 # 1. 처음 생성시 적용법
 
-
 **1-1. 폴더 생성할 아무곳이나 마우스 우클릭 + Git bash here 클릭**
 
 **1-2. 사용자 전역 등록**
-
 ```
 git config --global user.name (user name)
 
@@ -25,7 +23,6 @@ git clone http://github.com/(organization name)/(organization's repository name)
 **1-4. 코드 순차 입력(생성된 폴더에서 bash를 연 다음 - 해당 폴더에 .git이라는 폴더가 존재하는 폴더**
 
 ```
-
 git remote // origin이 뜨면 합격
 
 git add . // 여지껏 한 작업들 전부 한방에 이행
@@ -49,20 +46,22 @@ git fetch origin
 git merge origin/main
 ```
 
+#2. branch 사용
 
-
-** 브렌치(branch) 이용 **
+**2-1 브렌치 생성**
 ```
- git switch (브렌치명) or git checkout (main 혹은 branch 명)
+repository 안에서 issue를 통해 branch 생성 혹은 bash 에서 git branch (branch 명) 을 통해서 생성 
+	>>  bash 에서 생성시 repository 에서 생성한 branch의 명과 동일하게 생성하면 편함
+```
 
-// 이후 위의 add 작업부터 시작하면 됨
-// pull 하기전에 switch로 main으로 바꾼뒤 pull 해서 최신화 권장
-//		>> 그렇지 않으면 작업시 마다 폴더 삭제 후 새로 클론 해야함(충돌방지)
-// 만일 git switch 브렌치명 기입 후 오류 발생 시 아래의 코드 작성
-git branch (github 작업 branch명) // 이왕이면 main 바탕으로 만들어진 branch 명으로 동일하게 작성
+**2-2 브랜치 사용**
+```
+git checkout (main 혹은 branch 명)
+	>> 이후 add 작업부터 시작 하면 됨
 
 ```
-** 브렌치에 병합 시키기 **
+
+**2-3 브렌치에 병합 시키기 **
 ```
 git checkout main
 git pull
@@ -70,9 +69,15 @@ git checkout (branch명)
 git merge main -> branch 작업 환경에서 main 작업환경과 병합 시킴을 의미
 ```
 
-** bash에서 브렌치 삭제 **
+** 2-4bash에서 브렌치 삭제 **
 ```
 git branch -d (브렌치 명)
 ```
-***보통 이정도만 숙달해놓으면 괜찮은데 혹시나 오류생기면 알려주세요***
+
+** ※ origin 없이 push / pull**
+```
+git push -u origin 브랜치명 
+이후 
+git branch -vv 를 통해 origin 확인
+```
 
