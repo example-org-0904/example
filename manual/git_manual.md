@@ -41,6 +41,7 @@ git push origin main
 
 ```
 git pull origin main // pull 자체가 fetch 시키고 병합(merge)시킴
+
 ```
 **원래는 fetch 따로 merge 따로 해야함(이해를 위해 예시 남김)**
 ```
@@ -48,21 +49,30 @@ git fetch origin
 git merge origin/main
 ```
 
-***보통 이정도만 숙달해놓으면 괜찮은데 혹시나 오류생기면 알려주세요***
+
 
 ** 브렌치(branch) 이용 **
 ```
- git switch (브렌치명)
+ git switch (브렌치명) or git checkout (main 혹은 branch 명)
+
 // 이후 위의 add 작업부터 시작하면 됨
 // pull 하기전에 switch로 main으로 바꾼뒤 pull 해서 최신화 권장
 //		>> 그렇지 않으면 작업시 마다 폴더 삭제 후 새로 클론 해야함(충돌방지)
 // 만일 git switch 브렌치명 기입 후 오류 발생 시 아래의 코드 작성
 git branch (github 작업 branch명) // 이왕이면 main 바탕으로 만들어진 branch 명으로 동일하게 작성
+
+```
+** 브렌치에 병합 시키기 **
+```
+git checkout main
+git pull
+git checkout (branch명)
+git merge main -> branch 작업 환경에서 main 작업환경과 병합 시킴을 의미
 ```
 
 ** bash에서 브렌치 삭제 **
 ```
 git branch -d (브렌치 명)
 ```
-
+***보통 이정도만 숙달해놓으면 괜찮은데 혹시나 오류생기면 알려주세요***
 
