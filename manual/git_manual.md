@@ -56,6 +56,7 @@ git merge origin/main
 // 이후 위의 add 작업부터 시작하면 됨
 ```
 **bash에서 브렌치 삭제**
+```
 git branch -d (브렌치명)
 ```
 
