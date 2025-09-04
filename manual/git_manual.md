@@ -61,7 +61,7 @@ git checkout (main 혹은 branch 명)
 
 ```
 
-**2-3 브렌치에 병합 시키기 **
+**2-3 브렌치에 병합 시키기**
 ```
 git checkout main
 git pull
@@ -69,12 +69,12 @@ git checkout (branch명)
 git merge main -> branch 작업 환경에서 main 작업환경과 병합 시킴을 의미
 ```
 
-** 2-4bash에서 브렌치 삭제 **
+**2-4 bash에서 브렌치 삭제**
 ```
 git branch -d (브렌치 명)
 ```
 
-** ※ origin 없이 push / pull**
+**※ origin 없이 push / pull**
 ```
 git push -u origin 브랜치명 
 이후 
