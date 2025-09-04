@@ -22,11 +22,9 @@ git clone http://github.com/(user name)/(repository name)
 git clone http://github.com/(organization name)/(organization's repository name)
 ```
 
-**1-4. 코드 순차 입력**
+**1-4. 코드 순차 입력(생성된 폴더에서 bash를 연 다음 - 해당 폴더에 .git이라는 폴더가 존재하는 폴더**
 
 ```
-cd (folder name) // 해당 폴더로 이동하는 명령어
-ex) cd Git-chana
 
 git remote // origin이 뜨면 합격
 
