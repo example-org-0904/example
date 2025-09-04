@@ -53,14 +53,14 @@ git merge origin/main
 
 ** 브렌치(branch) 이용 **
 ```
- git switch (브렌치명) or git checkout (main 혹은 branch 명)
+ git switch (브렌치명) or git checkout (main 혹은 branch 명) 
 
 // 이후 위의 add 작업부터 시작하면 됨
 // pull 하기전에 switch로 main으로 바꾼뒤 pull 해서 최신화 권장
 //		>> 그렇지 않으면 작업시 마다 폴더 삭제 후 새로 클론 해야함(충돌방지)
 // 만일 git switch 브렌치명 기입 후 오류 발생 시 아래의 코드 작성
 git branch (github 작업 branch명) // 이왕이면 main 바탕으로 만들어진 branch 명으로 동일하게 작성
-
+	or git checkout -b (브렌치명)
 ```
 ** 브렌치에 병합 시키기 **
 ```
