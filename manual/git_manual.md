@@ -46,7 +46,7 @@ git fetch origin
 git merge origin/main
 ```
 
-#2. branch 사용
+# 2. branch 사용
 
 **2-1 브렌치 생성**
 ```
