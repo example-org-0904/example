@@ -46,7 +46,7 @@ git fetch origin
 git merge origin/main
 ```
 
-#2. branch 사용
+# 2. branch 사용
 
 **2-1 브렌치 생성**
 ```
@@ -63,7 +63,7 @@ git checkout (main 혹은 branch 명)
 
 ```
 
-**2-3 브렌치에 병합 시키기 **
+**2-3 브렌치에 병합 시키기**
 ```
 git checkout main
 git pull
@@ -71,7 +71,7 @@ git checkout (branch명)
 git merge main -> branch 작업 환경에서 main 작업환경과 병합 시킴을 의미
 ```
 
-**2-4bash에서 브렌치 삭제 **
+**2-4bash에서 브렌치 삭제**
 ```
 git branch -d (브렌치 명)
 ```
@@ -83,38 +83,38 @@ git push -u origin 브랜치명
 git branch -vv 를 통해 origin 확인
 ```
 
-#3. 작업 순서 쉽게 하기
+# 3. 작업 순서 쉽게 하기
 **3-1 작업 환경 맞추기**
-###1)작업할 IDE 환경 폴더 열어두기 
-###※작업폴더 열때 .git을 감싸고 있는 폴더가 아닌 .git과 같은레벨의 폴더가 프로젝트 폴더이다.
-###2) .git 이 보이는 폴더에서 우클릭을 통해 bash 열어두기
-###※ 기본적으로 develop이 되어있을거임 이때 충돌 방지를 위해 작업 시작 전에 git pull 해놓기
+### 1)작업할 IDE 환경 폴더 열어두기 
+### ※작업폴더 열때 .git을 감싸고 있는 폴더가 아닌 .git과 같은레벨의 폴더가 프로젝트 폴더이다.
+### 2) .git 이 보이는 폴더에서 우클릭을 통해 bash 열어두기
+### ※ 기본적으로 develop이 되어있을거임 이때 충돌 방지를 위해 작업 시작 전에 git pull 해놓기
 ```
 git pull
 ```
-###3)작업할 영역의 Github를 열고 branch 먼저 생성
-###※브랜치는 issue를 이용하든 projects를 이용하든 만들면 됨 브랜치 명은 해당 팀에서 정한데로
-###4)이후 나온 git 명령어를 열어둔 bash에 복사 붙여넣기(bash는 ctrl v 가 안되게 때문에 마우스 우클릭 권장 
-###※만약 붙여 넣기가 안된다면 아래의 명령어 사용
+### 3)작업할 영역의 Github를 열고 branch 먼저 생성
+### ※브랜치는 issue를 이용하든 projects를 이용하든 만들면 됨 브랜치 명은 해당 팀에서 정한데로
+### 4)이후 나온 git 명령어를 열어둔 bash에 복사 붙여넣기(bash는 ctrl v 가 안되게 때문에 마우스 우클릭 권장 
+### ※만약 붙여 넣기가 안된다면 아래의 명령어 사용
 ```
 git fetch origin
 git checkout (생성한 branch 명)
 ```
-###이러면 자동으로 해당 브랜치 명으로 bash 작업영역이 바뀐다. -> 이러면 작업 준비 끝
+### 이러면 자동으로 해당 브랜치 명으로 bash 작업영역이 바뀐다. -> 이러면 작업 준비 끝
 
 **3-2 작업 주의사항**
-###작업 영역에서 작업이 끝났다면 업로드 하면 되는데 충돌 방지를 위해 add . 하기 전 가져야하는 습관? 
+### 작업 영역에서 작업이 끝났다면 업로드 하면 되는데 충돌 방지를 위해 add . 하기 전 가져야하는 습관? 
 ```
 git checkout develop // develop 환경으로 바꾸기
 git pull // 혹시 먼저 업로드 되어있는 파일이 존재 할수 있음
 git checkout (작업한 branch 명) // 다시 원래 bash 작업 영억으로 돌아우기
 git merge develop // pull 해온 develop과 본인이 작업하던 브랜치와 파일 병합
 ```
-###이후 add , commit , push 하면 됨
-###마지막으로 Github에 돌아가서 PR(Pull Request) 하면됨
-###※PR이 성공했다면 develop에 가서 pull 해놓기! (충돌방지)
+### 이후 add , commit , push 하면 됨
+### 마지막으로 Github에 돌아가서 PR(Pull Request) 하면됨
+### ※PR이 성공했다면 develop에 가서 pull 해놓기! (충돌방지)
 
-###※ 새로운 작업을 시작하려면 브랜치 생성부터 다시 진행하면 됨
+### ※ 새로운 작업을 시작하려면 브랜치 생성부터 다시 진행하면 됨
 
 
 
