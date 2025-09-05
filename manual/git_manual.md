@@ -46,12 +46,14 @@ git fetch origin
 git merge origin/main
 ```
 
-# 2. branch 사용
+#2. branch 사용
 
 **2-1 브렌치 생성**
 ```
+
 repository 안에서 issue를 통해 branch 생성 혹은 bash 에서 git branch (branch 명) 을 통해서 생성 
-	>>  bash 에서 생성시 repository 에서 생성한 branch의 명과 동일하게 생성하면 편함
+>>  bash 에서 생성시 repository 에서 생성한 branch의 명과 동일하게 생성하면 편함
+ 	-> git checkout -b (브랜치명)
 ```
 
 **2-2 브랜치 사용**
@@ -61,7 +63,7 @@ git checkout (main 혹은 branch 명)
 
 ```
 
-**2-3 브렌치에 병합 시키기**
+**2-3 브렌치에 병합 시키기 **
 ```
 git checkout main
 git pull
@@ -69,15 +71,18 @@ git checkout (branch명)
 git merge main -> branch 작업 환경에서 main 작업환경과 병합 시킴을 의미
 ```
 
-**2-4 bash에서 브렌치 삭제**
+** 2-4bash에서 브렌치 삭제 **
 ```
 git branch -d (브렌치 명)
 ```
 
-**※ origin 없이 push / pull**
+** ※ origin 없이 push / pull**
 ```
 git push -u origin 브랜치명 
 이후 
 git branch -vv 를 통해 origin 확인
 ```
+
+
+
 
